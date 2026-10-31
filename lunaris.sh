@@ -159,7 +159,7 @@ start_build_process() {
     export WITH_PIXEL_LAUNCHER=true
     export TARGET_USE_FILES=true
     export TARGET_USE_GPHOTOS=true
-    export TARGET_USE_MAPS=true
+    export TARGET_USE_MAPS=false
     export TARGET_EXCLUDE_MATLOG=true
     export TARGET_USE_WALLPAPERS=true
     export USE_REALITY_ENGINE=true
