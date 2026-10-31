@@ -156,12 +156,12 @@ start_build_process() {
     . build/envsetup.sh
     export WITH_GMS=true
     export WITH_GMS_COMMS_SUITE=true
-    export WITH_PIXEL_LAUNCHER=false
+    export WITH_PIXEL_LAUNCHER=true
     export TARGET_USE_FILES=true
     export TARGET_USE_GPHOTOS=true
-    export TARGET_USE_MAPS=false
+    export TARGET_USE_MAPS=true
     export TARGET_EXCLUDE_MATLOG=true
-    export TARGET_USE_WALLPAPERS=false
+    export TARGET_USE_WALLPAPERS=true
     export USE_REALITY_ENGINE=true
     lunch lineage_"$DEVICE_CODE"-bp4a-userdebug
     m installclean
