@@ -163,6 +163,7 @@ start_build_process() {
     export TARGET_EXCLUDE_MATLOG=true
     export TARGET_USE_WALLPAPERS=true
     export USE_REALITY_ENGINE=true
+    export PRODUCT_NO_CAMERA=false
     lunch lineage_"$DEVICE_CODE"-bp4a-userdebug
     m installclean
     m bacon -j$(nproc --all)
