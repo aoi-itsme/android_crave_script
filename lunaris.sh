@@ -158,8 +158,12 @@ start_build_process() {
     export WITH_GMS_COMMS_SUITE=true
     export WITH_PIXEL_LAUNCHER=false
     export TARGET_USE_FILES=true
+    export TARGET_USE_GPHOTOS=true
+    export TARGET_USE_MAPS=false
     export TARGET_EXCLUDE_MATLOG=true
-    lunch lineage_"$DEVICE_CODE"-bp4a-userdebug
+    export TARGET_USE_WALLPAPERS=false
+    export USE_REALITY_ENGINE=true
+    lunch lineage_"$DEVICE_CODE"-bp4a-user
     m bacon -j$(nproc --all)
 
     BUILD_STATUS=${PIPESTATUS[0]}
